@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atpco.yqyr.mapper.QueryYQYRMapper">
+    <resultMap type="com.atpco.yqyr.model.AtpcoYQYRS1" id="AtpcoYQYRS1">
+        <!--<result column="REC_TYPE" property="recType" jdbcType="VARCHAR"/>-->
+        <result column="CXR_CODE" property="cxrCode" jdbcType="VARCHAR"/>
+        <result column="TAX_CODE" property="taxCode" jdbcType="VARCHAR"/>
+        <result column="SUB_CODE" property="subCode" jdbcType="VARCHAR"/>
+        <!--<result column="MCN" property="mcn" jdbcType="VARCHAR"/>-->
+        <result column="SEQ_NO" property="seqNo" jdbcType="VARCHAR"/>
+        <result column="TRAVEL_EFF" property="travelEff" jdbcType="VARCHAR"/>
+        <result column="TRAVEL_DISC" property="travelDisc" jdbcType="VARCHAR"/>
+        <result column="TICKET_FIRST" property="ticketFirst" jdbcType="VARCHAR"/>
+        <result column="TICKET_LAST" property="ticketLast" jdbcType="VARCHAR"/>
+        <result column="CARRIER_APPL" property="tktCxr190" jdbcType="VARCHAR"/>
+        <result column="RTN_TO_ORIG" property="rtnToOrig" jdbcType="VARCHAR"/>
+        <result column="PSGR" property="psgr" jdbcType="VARCHAR"/>
+        <!--<result column="POINT_OF_SALE_FILLER" property="pointOfSaleFiller" jdbcType="VARCHAR"/>-->
+        <result column="POINT_OF_SALE_TYPE" property="pointOfSaleType" jdbcType="VARCHAR"/>
+        <result column="POINT_OF_SALE_GEOGRAPHIC_L" property="pointOfSaleGeographicL" jdbcType="VARCHAR"/>
+        <result column="POINT_OF_SALE_CODE" property="pointOfSaleCode" jdbcType="VARCHAR"/>
+        <result column="POINT_OF_SALE_CODE_VALUE" property="pointOfSaleCodeValue" jdbcType="VARCHAR"/>
+        <result column="POINT_OF_TICKETING" property="pointOfTicketing" jdbcType="VARCHAR"/>
+        <result column="POINT_OF_TICKETING_VALUE" property="pointOfTicketingValue" jdbcType="VARCHAR"/>
+        <result column="JRNY_GEO_SPEC_INDICATOR" property="jrnyGeoSpecIndicator" jdbcType="VARCHAR"/>
+        <!--<result column="JRNY_GEO_SPEC_LOC1" property="jrnyGeoSpecLoc1" jdbcType="VARCHAR"/>-->
+        <result column="JRNY_GEO_SPEC_LOC1_VALUE" property="jrnyGeoSpecLoc1Value" jdbcType="VARCHAR"/>
+        <!--<result column="JRNY_GEO_SPEC_LOC2" property="jrnyGeoSpecLoc2" jdbcType="VARCHAR"/>-->
+        <result column="JRNY_GEO_SPEC_LOC2_VALUE" property="jrnyGeoSpecLoc2Value" jdbcType="VARCHAR"/>
+        <!--<result column="JRNY_GEO_SPEC_VIA_LOC" property="jrnyGeoSpecViaLoc" jdbcType="VARCHAR"/>-->
+        <result column="JRNY_GEO_SPEC_VIA_LOC_VALUE" property="jrnyGeoSpecViaLocValue" jdbcType="VARCHAR"/>
+        <!--<result column="JRNY_GEO_SPEC_TRVL_W_W_L" property="jrnyGeoSpecTrvlWWL" jdbcType="VARCHAR"/>-->
+        <result column="JRNY_GEO_SPEC_TRVL_W_W_L_V" property="jrnyGeoSpecTrvlWWLV" jdbcType="VARCHAR"/>
+        <result column="SECTOR_PRT_GEO_SPEC" property="sectorPrtGeoSpec" jdbcType="VARCHAR"/>
+        <result column="SECTOR_PRT_FROM_TO" property="sectorPrtFromTo" jdbcType="VARCHAR"/>
+        <!--<result column="SECTOR_PRT_LOC1" property="sectorPrtLoc1" jdbcType="VARCHAR"/>-->
+        <result column="SECTOR_PRT_LOC1_VALUE" property="sectorPrtLoc1Value" jdbcType="VARCHAR"/>
+        <!--<result column="SECTOR_PRT_LOC2" property="sectorPrtLoc2" jdbcType="VARCHAR"/>-->
+        <result column="SECTOR_PRT_LOC2_VALUE" property="sectorPrtLoc2Value" jdbcType="VARCHAR"/>
+        <result column="SECTOR_PRT_VIA_GEO" property="sectorPrtViaGeo" jdbcType="VARCHAR"/>
+        <result column="SECTOR_PRT_VIA_GEO_VALUE" property="sectorPrtViaGeoValue" jdbcType="VARCHAR"/>
+        <result column="SECTOR_PRT_VIA_STP_CNX" property="sectorPrtViaStpCnx" jdbcType="VARCHAR"/>
+        <result column="SECTOR_PRT_VIA_EXC_STOP_TIME" property="sectorPrtViaExcStopTime" jdbcType="VARCHAR"/>
+        <result column="SECTOR_PRT_VIA_EXC_STOP_T_U" property="sectorPrtViaExcStopTU" jdbcType="VARCHAR"/>
+        <result column="SECTOR_PRT_VIA_CNX_EXEMPT" property="sectorPrtViaCnxExempt" jdbcType="VARCHAR"/>
+        <result column="SECTOR_PRT_INTL_DOM" property="sectorPrtIntlDom" jdbcType="VARCHAR"/>
+        <result column="CXR_FLT_TBL_NO_186" property="cxrFltTblNo186" jdbcType="VARCHAR"/>
+        <result column="RBD" property="rbd" jdbcType="VARCHAR"/>
+        <!--<result column="RBD2" property="rbd2" jdbcType="VARCHAR"/>-->
+        <!--<result column="RBD3" property="rbd3" jdbcType="VARCHAR"/>-->
+        <result column="EQP" property="eqp" jdbcType="VARCHAR"/>
+        <result column="FARE_BASIS_CODE" property="fareBasisCode" jdbcType="VARCHAR"/>
+        <!--<result column="BATCH_CI" property="batchCi" jdbcType="VARCHAR"/>-->
+        <!--<result column="BATCH_NO" property="batchNo" jdbcType="VARCHAR"/>-->
+        <result column="SERVICE_FEE_AMOUNT" property="serviceFeeAmount" jdbcType="VARCHAR"/>
+        <result column="SERVICE_FEE_CUR" property="serviceFeeCur" jdbcType="VARCHAR"/>
+        <!--<result column="SERVICE_FEE_DEC" property="serviceFeeDec" jdbcType="VARCHAR"/>-->
+        <result column="SERVICE_FEE_PERCENT" property="serviceFeePercent" jdbcType="VARCHAR"/>
+        <result column="SERVICE_FEE_TAX" property="includeTax" jdbcType="VARCHAR"/>
+        <result column="SERVICE_FEE_APPLICATION" property="serviceFeeApplication" jdbcType="VARCHAR"/>
+        <!--<result column="TXT_TBL_NO_196" property="txtTblNo196" jdbcType="VARCHAR"/>-->
+        <!--<result column="ID" property="id" jdbcType="VARCHAR"/>-->
+        <!--<result column="HEADER_ID" property="headerId" jdbcType="VARCHAR"/>-->
+        <result column="RBD_TBL_NO_198" property="rbdTblNo198" jdbcType="VARCHAR"/>
+        <result column="CABIN" property="cabin" jdbcType="VARCHAR"/>
+        <result column="FILE_DATE" property="pubDate" jdbcType="VARCHAR"/>
+        <result column="RES_FARE_CLA_TBL_NO_171" property="fcl171" jdbcType="VARCHAR"/>
+        <result column="TICKET_DES_TBL_NO_173" property="tktDes173" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="query" resultMap="AtpcoYQYRS1">
+        select
+        <include refid="selectColumns"/>
+        from atpco_yqyr_s1_base t
+        where t.cxr_code = #{condition.mktCxr}
+        and t.sub_code = #{condition.feeType}
+        <if test="condition.pubBegin != '' and condition.pubBegin !=null" >
+            and t.file_date <![CDATA[ >= ]]> to_date(#{condition.pubBegin},'yyyy-MM-dd')
+        </if>
+        <if test="condition.pubEnd != '' and condition.pubEnd != null" >
+            and t.file_date <![CDATA[ <= ]]> to_date(#{condition.pubEnd},'yyyy-MM-dd')
+        </if>
+        <if test="condition.sequence != null and condition.sequence != ''">
+            and t.seq_no = #{condition.sequence}
+        </if>
+        <include refid="pax_type_clause"/>
+        <include refid="date_range_clause"/>
+        <if test='condition.apply == "J"'>
+            <include refid="journey_clause"/>
+        </if>
+        <if test='condition.apply == "S"'>
+            <include refid="portion_clause"/>
+        </if>
+        <include refid="class_clause"/>
+        <if test="condition.eqp != null">
+            and (t.eqp is null or t.eqp = #{condition.eqp})
+        </if>
+    </select>
+
+    <sql id="selectColumns">
+        --REC_TYPE,
+        CXR_CODE,
+        TAX_CODE,
+        SUB_CODE,
+        --MCN,
+        SEQ_NO,
+        TRAVEL_EFF,
+        TRAVEL_DISC,
+        TICKET_FIRST,
+        TICKET_LAST,
+        <include refid="190_show"/>
+        RTN_TO_ORIG,
+        PSGR,
+        --POINT_OF_SALE_FILLER,
+        POINT_OF_SALE_TYPE,
+        POINT_OF_SALE_GEOGRAPHIC_L,
+        POINT_OF_SALE_CODE,
+        POINT_OF_SALE_CODE_VALUE,
+        POINT_OF_TICKETING,
+        POINT_OF_TICKETING_VALUE,
+        JRNY_GEO_SPEC_INDICATOR,
+        <include refid="J1_clause"/>
+        <include refid="J2_clause"/>
+        <include refid="JV_clause"/>
+        <include refid="JW_clause"/>
+        decode(SECTOR_PRT_GEO_SPEC, 'P','含途径','') as SECTOR_PRT_GEO_SPEC,
+        SECTOR_PRT_FROM_TO,
+        <include refid="S1_clause"/>
+        <include refid="S2_clause"/>
+        <include refid="SV_clause"/>
+        SECTOR_PRT_VIA_STP_CNX,
+        nvl(SECTOR_PRT_VIA_EXC_STOP_TIME, '24') as  SECTOR_PRT_VIA_EXC_STOP_TIME,
+        decode(SECTOR_PRT_VIA_EXC_STOP_T_U, 'N', 'Minutes','D','Days', 'M', 'Months', 'Hours')  as SECTOR_PRT_VIA_EXC_STOP_T_U,
+        SECTOR_PRT_VIA_CNX_EXEMPT,
+        SECTOR_PRT_INTL_DOM,
+        CXR_FLT_TBL_NO_186,
+        <include refid="clazz_show"/>
+        FARE_BASIS_CODE,
+        <include refid="rbd_198_show"/>
+        CABIN,
+        --BATCH_CI,
+        --BATCH_NO,
+        --SERVICE_FEE_AMOUNT,
+        <include refid="amount_calculate"/>
+        SERVICE_FEE_CUR,
+        --SERVICE_FEE_DEC,
+        SERVICE_FEE_PERCENT,
+        decode(SERVICE_FEE_TAX, 'X', '  Yes','No') as SERVICE_FEE_TAX,
+        --SERVICE_FEE_APPLICATION,
+        <include refid="fee_apply"/>
+        --TXT_TBL_NO_196,
+        --ID,
+--      HEADER_ID
+        <include refid="171_show"/>
+        <include refid="173_show"/>
+        to_char(t.file_date, 'yyyy-MM-dd') as FILE_DATE,
+        EQP
+    </sql>
+
+    <sql id="J1_clause">
+        case
+        when t.jrny_geo_spec_loc1 = 'P' then
+        'Airport ' || t.jrny_geo_spec_loc1_value
+        when t.jrny_geo_spec_loc1 = 'C' then
+        'City ' || t.jrny_geo_spec_loc1_value
+        when t.jrny_geo_spec_loc1 = 'S' then
+        'State ' || t.jrny_geo_spec_loc1_value
+        when t.jrny_geo_spec_loc1 = 'N' then
+        'Country ' || t.jrny_geo_spec_loc1_value
+        when t.jrny_geo_spec_loc1 = 'Z' then
+        'Zone ' || t.jrny_geo_spec_loc1_value
+        when t.jrny_geo_spec_loc1 = 'A' then
+        'Area ' || t.jrny_geo_spec_loc1_value
+        when t.jrny_geo_spec_loc1 = 'U' then
+        (select
+        <include refid="178_area_show"/>
+        where t.jrny_geo_spec_loc1_value = c.tbl_no
+        group by c.appl)
+        else
+        ''
+        end as jrny_geo_spec_loc1_value,
+    </sql>
+
+    <sql id="J2_clause">
+        case
+        when t.jrny_geo_spec_loc2 = 'P' then
+        'Airport ' || t.jrny_geo_spec_loc2_value
+        when t.jrny_geo_spec_loc2 = 'C' then
+        'City ' || t.jrny_geo_spec_loc2_value
+        when t.jrny_geo_spec_loc2 = 'S' then
+        'State ' || t.jrny_geo_spec_loc2_value
+        when t.jrny_geo_spec_loc2 = 'N' then
+        'Country ' || t.jrny_geo_spec_loc2_value
+        when t.jrny_geo_spec_loc2 = 'Z' then
+        'Zone ' || t.jrny_geo_spec_loc2_value
+        when t.jrny_geo_spec_loc2 = 'A' then
+        'Area ' || t.jrny_geo_spec_loc2_value
+        when t.jrny_geo_spec_loc2 = 'U' then
+        (select
+        <include refid="178_area_show"/>
+        where t.jrny_geo_spec_loc2_value = c.tbl_no
+        group by c.appl)
+        else
+        ''
+        end as jrny_geo_spec_loc2_value,
+    </sql>
+
+    <sql id="JV_clause">
+        case
+        when t.jrny_geo_spec_via_loc = 'P' then
+        'Airport ' || t.jrny_geo_spec_via_loc_value
+        when t.jrny_geo_spec_via_loc = 'C' then
+        'City ' || t.jrny_geo_spec_via_loc_value
+        when t.jrny_geo_spec_via_loc = 'S' then
+        'State ' || t.jrny_geo_spec_via_loc_value
+        when t.jrny_geo_spec_via_loc = 'N' then
+        'Country ' || t.jrny_geo_spec_via_loc_value
+        when t.jrny_geo_spec_via_loc = 'Z' then
+        'Zone ' || t.jrny_geo_spec_via_loc_value
+        when t.jrny_geo_spec_via_loc = 'A' then
+        'Area ' || t.jrny_geo_spec_via_loc_value
+        when t.jrny_geo_spec_via_loc = 'U' then
+        (select
+        <include refid="178_area_show"/>
+        where t.jrny_geo_spec_via_loc_value = c.tbl_no
+        group by c.appl)
+        else
+        ''
+        end as jrny_geo_spec_via_loc_value,
+    </sql>
+
+    <sql id="JW_clause">
+        case
+        when t.jrny_geo_spec_trvl_w_w_l = 'P' then
+        'Airport ' || t.jrny_geo_spec_trvl_w_w_l_v
+        when t.jrny_geo_spec_trvl_w_w_l = 'C' then
+        'City ' || t.jrny_geo_spec_trvl_w_w_l_v
+        when t.jrny_geo_spec_trvl_w_w_l = 'S' then
+        'State ' || t.jrny_geo_spec_trvl_w_w_l_v
+        when t.jrny_geo_spec_trvl_w_w_l = 'N' then
+        'Country ' || t.jrny_geo_spec_trvl_w_w_l_v
+        when t.jrny_geo_spec_trvl_w_w_l = 'Z' then
+        'Zone ' || t.jrny_geo_spec_trvl_w_w_l_v
+        when t.jrny_geo_spec_trvl_w_w_l = 'A' then
+        'Area ' || t.jrny_geo_spec_trvl_w_w_l_v
+        when t.jrny_geo_spec_trvl_w_w_l = 'U' then
+        (select
+        <include refid="178_area_show"/>
+        where t.jrny_geo_spec_trvl_w_w_l_v = c.tbl_no
+        group by c.appl)
+        else
+        ''
+        end as jrny_geo_spec_trvl_w_w_l_v,
+    </sql>
+
+    <sql id="S1_clause">
+        case
+        when t.sector_prt_loc1 = 'P' then
+        'Airport ' || t.sector_prt_loc1_value
+        when t.sector_prt_loc1 = 'C' then
+        'City ' || t.sector_prt_loc1_value
+        when t.sector_prt_loc1 = 'S' then
+        'State ' || t.sector_prt_loc1_value
+        when t.sector_prt_loc1 = 'N' then
+        'Country ' || t.sector_prt_loc1_value
+        when t.sector_prt_loc1 = 'Z' then
+        'Zone ' || t.sector_prt_loc1_value
+        when t.sector_prt_loc1 = 'A' then
+        'Area ' || t.sector_prt_loc1_value
+        when t.sector_prt_loc1 = 'U' then
+        (select
+        <include refid="178_area_show"/>
+        where t.sector_prt_loc1_value = c.tbl_no
+        group by c.appl)
+        else
+        ''
+        end as sector_prt_loc1_value,
+    </sql>
+
+    <sql id="S2_clause">
+        case
+        when t.sector_prt_loc2 = 'P' then
+        'Airport ' || t.sector_prt_loc2_value
+        when t.sector_prt_loc2 = 'C' then
+        'City ' || t.sector_prt_loc2_value
+        when t.sector_prt_loc2 = 'S' then
+        'State ' || t.sector_prt_loc2_value
+        when t.sector_prt_loc2 = 'N' then
+        'Country ' || t.sector_prt_loc2_value
+        when t.sector_prt_loc2 = 'Z' then
+        'Zone ' || t.sector_prt_loc2_value
+        when t.sector_prt_loc2 = 'A' then
+        'Area ' || t.sector_prt_loc2_value
+        when t.sector_prt_loc2 = 'U' then
+        (select
+        <include refid="178_area_show"/>
+        where t.sector_prt_loc2_value = c.tbl_no
+        group by c.appl)
+        else
+        ''
+        end as sector_prt_loc2_value,
+    </sql>
+
+    <sql id="SV_clause">
+        case
+        when t.sector_prt_via_geo = 'P' then
+        'Airport ' || t.sector_prt_via_geo_value
+        when t.sector_prt_via_geo = 'C' then
+        'City ' || t.sector_prt_via_geo_value
+        when t.sector_prt_via_geo = 'S' then
+        'State ' || t.sector_prt_via_geo_value
+        when t.sector_prt_via_geo = 'N' then
+        'Country ' || t.sector_prt_via_geo_value
+        when t.sector_prt_via_geo = 'Z' then
+        'Zone ' || t.sector_prt_via_geo_value
+        when t.sector_prt_via_geo = 'A' then
+        'Area ' || t.sector_prt_via_geo_value
+        when t.sector_prt_via_geo = 'U' then
+        (select
+        <include refid="178_area_show"/>
+        where t.sector_prt_via_geo_value = c.tbl_no
+        group by c.appl)
+        else
+        ''
+        end as sector_prt_via_geo_value,
+    </sql>
+
+    <sql id="178_area_show">
+        listagg(nvl2(c.appl, 'Excl ' || listagg(case
+        when c.geo_loc_type = 'P' then
+        'Airport ' || c.geo_loc_value
+        when c.geo_loc_type = 'C' then
+        'City ' || c.geo_loc_value
+        when c.geo_loc_type = 'S' then
+        'State ' || c.geo_loc_value
+        when c.geo_loc_type = 'N' then
+        'Country ' || c.geo_loc_value
+        when c.geo_loc_type = 'Z' then
+        'Zone ' || c.geo_loc_value
+        when c.geo_loc_type = 'A' then
+        'Area ' || c.geo_loc_value
+        else
+        ''
+        end, ', ') within group (order by c.geo_loc_type), 'Incl ' || listagg(case
+        when c.geo_loc_type = 'P' then
+        'Airport ' || c.geo_loc_value
+        when c.geo_loc_type = 'C' then
+        'City ' || c.geo_loc_value
+        when c.geo_loc_type = 'S' then
+        'State ' || c.geo_loc_value
+        when c.geo_loc_type = 'N' then
+        'Country ' || c.geo_loc_value
+        when c.geo_loc_type = 'Z' then
+        'Zone ' || c.geo_loc_value
+        when c.geo_loc_type = 'A' then
+        'Area ' || c.geo_loc_value
+        else
+        ''
+        end,', ') within group (order by c.geo_loc_type)), '; ') within group(order by c.appl desc)
+          from atpco_yqyr_178 c
+    </sql>
+
+    <sql id="171_show">
+        (select listagg(p.resulting_fare_class, ';') within group(order by p.resulting_fare_class)
+        from atpco_yqyr_171_base p
+        where p.tbl_no = t.res_fare_cla_tbl_no_171
+        group by p.tbl_no) as RES_FARE_CLA_TBL_NO_171,
+    </sql>
+
+    <sql id="173_show">
+        (select to_char(wm_concat(j.ticket_designator))
+        from atpco_yqyr_173_base j
+        where j.tbl_no = t.ticket_des_tbl_no_173) as TICKET_DES_TBL_NO_173,
+    </sql>
+
+    <sql id="190_show">
+         (select nvl2(g.appl,'Excl ' || g.cxr || ' ' || regexp_replace(g.rec_segs,'$$|X',''),  'Incl ' || g.cxr || ' ' || replace(g.rec_segs, '$$',''))
+        from ATPCO_YQYR_190 g where t.carrier_appl = g.tbl_no) as CARRIER_APPL,
+    </sql>
+
+    <sql id="amount_calculate">
+          to_number(SERVICE_FEE_AMOUNT) / to_number(substr('100000',1, to_number(SERVICE_FEE_DEC) + 1)) ||'' as SERVICE_FEE_AMOUNT,
+    </sql>
+
+    <sql id="clazz_show">
+           t.rbd || nvl2(t.rbd2, ',' || t.rbd2, '') ||
+                   nvl2(t.rbd3, ',' || t.rbd3, '') as RBD,
+    </sql>
+
+
+    <sql id="rbd_198_show">
+        (select to_char(wm_concat(h.rbds)) from atpco_yqyr_198 h where h.tbl_no = t.rbd_tbl_no_198) as rbd_tbl_no_198,
+    </sql>
+
+    <sql id="fee_apply">
+        decode(SERVICE_FEE_APPLICATION, '1','Per Direction','2','Per Journey', 'Per Sector') as SERVICE_FEE_APPLICATION,
+    </sql>
+
+    <sql id="date_range_clause">
+        <if test="condition.travelDate != null and condition.travelDate != '' ">
+            and #{condition.trvlDt} <![CDATA[ >= ]]>
+            decode(t.travel_eff,
+            '999999',
+            '0',
+            t.travel_eff)
+            and #{condition.trvlDt} <![CDATA[ <= ]]> t.travel_disc
+        </if>
+
+        <if test="condition.tktDate != null and condition.tktDate != ''">
+            and #{condition.tktDt} <![CDATA[ >= ]]>
+            decode(t.ticket_first,
+            '999999',
+            '0',
+            t.ticket_first)
+            and #{condition.tktDt} <![CDATA[ <= ]]> t.ticket_last
+        </if>
+    </sql>
+
+    <sql id="pax_type_clause">
+        <if test="condition.paxType != null and condition.paxType != ''">
+        and (t.psgr is null or exists
+            (select 1
+            from passenger_mapping_check p
+            where p.psgr_type = t.psgr
+            and p.normal_type = #{condition.paxType}))
+        </if>
+    </sql>
+
+    <sql id="journey_clause">
+        <if test="condition.orig != null and condition.orig != ''">
+            and (t.jrny_geo_spec_loc1_value is null or
+            t.jrny_geo_spec_loc1_value = #{condition.orig})
+        </if>
+        <if test="condition.dest != null and condition.dest != ''">
+            and (t.jrny_geo_spec_loc2_value is null or
+            t.jrny_geo_spec_loc2_value = #{condition.dest})
+        </if>
+
+        <if test="condition.via != null and condition.via != ''">
+            and (t.jrny_geo_spec_via_loc_value is null or
+            t.jrny_geo_spec_via_loc_value = #{condition.via})
+        </if>
+    </sql>
+
+    <sql id="portion_clause">
+        <if test="condition.orig != null and condition.orig != ''">
+            and (t.sector_prt_loc1_value is null or
+            t.sector_prt_loc1_value = #{condition.orig})
+        </if>
+        <if test="condition.dest != null and condition.dest !=''">
+            and (t.sector_prt_loc2_value is null or
+            t.sector_prt_loc2_value = #{condition.dest})
+        </if>
+
+        <if test="condition.via != null and condition.via !=''">
+            and (t.sector_prt_via_geo_value is null or
+            t.sector_prt_via_geo_value = #{condition.via})
+        </if>
+    </sql>
+
+
+    <sql id="class_clause">
+        <if test="condition.clazz != null and condition.clazz !=''">
+            and (t.rbd || t.rbd2 || t.rbd3 is null or
+            t.rbd = #{condition.clazz} or
+            t.rbd2 = #{condition.clazz} or
+            t.rbd3 = #{condition.clazz})
+            and (t.rbd_tbl_no_198 is null or
+            t.rbd_tbl_no_198 = '00000000' or exists(
+            select 1
+            from atpco_yqyr_198 g
+            where g.tbl_no = t.rbd_tbl_no_198
+            and g.mkt_op = 'M'
+            and g.cxr like #{condition.mktCxr}
+            ))
+        </if>
+        <if test="condition.cabin != null and condition.cabin != ''">
+            and (t.cabin is null or t.cabin = #{condition.cabin})
+        </if>
+    </sql>
+</mapper>

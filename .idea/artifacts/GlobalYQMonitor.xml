@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="GlobalYQMonitor">
+    <output-path>$PROJECT_DIR$/out/artifacts/GlobalYQMonitor</output-path>
+    <root id="archive" name="GlobalYQMonitor.war">
+      <element id="artifact" artifact-name="YQYR:war exploded" />
+    </root>
+  </artifact>
+</component>
